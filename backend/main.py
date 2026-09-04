@@ -29,3 +29,7 @@ async def health_check():
         "status": "ok",
         "message": "WeatherGPT is healthy"
     }
+
+from app.api import auth
+
+app.include_router(auth.router, prefix="/api/auth", tags=["auth"])
