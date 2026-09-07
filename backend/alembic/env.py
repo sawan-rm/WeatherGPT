@@ -11,9 +11,16 @@ from app.core.database import Base
 # We will import all models here later so Alembic can detect them:
 from app.models.user import User
 from app.models.chat import ChatSession, Message
-from app.models.alert import AlertSubscription, Alert
+from app.models.alert import AlertSubscription, LandslideAlert
 from app.models.weather_cache import WeatherCache
 from app.models.crop import Crop, CropAdvisory
+from app.models.zone import LandslideZone
+from app.models.sensor_reading import SensorReading
+from app.models.rainfall_data import RainfallData
+from app.models.landslide_event import LandslideEvent
+from app.models.citizen_report import CitizenReport
+from app.models.risk_assessment import RiskAssessment
+from app.models.infrastructure import Road, Village, CriticalInfrastructure
 
 
 # from app.models.user import User
